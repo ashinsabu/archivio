@@ -80,13 +80,13 @@
     background-color: #691417 ;
     color: white;
 }
-.header a.active-page {
-    background-color: grey;
-    color: white;
-}
 .header a:hover{
     background-color: #ddd;
     color: black;
+}
+
+#active-page{
+    background-color: rgba(128, 128, 128, 0.508);
 }
 
 .header-right {

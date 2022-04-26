@@ -1,0 +1,47 @@
+.artist-info{
+    margin-top: 100px;
+}
+.artist-image{
+    border-radius: 50%;
+    box-shadow: 10px 10px 5px #ccc;
+    width: 400px;
+    display: block;
+    margin: auto;
+}
+.artist-passage{
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 50px;    
+    margin-top: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 25px;
+}
+.artist-info p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.artist-info h2{
+    color: #BB7D11;
+}
+.artist-info .horizontal-line{
+    margin-left:200px;
+    margin-top: 20px;
+}
+.artist-works{
+    margin: 200px;    
+    margin-top: 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 25px;
+}
+.like-button{
+    width: 20px;
+    height: 20px;
+    background: url("../images/heart-unliked.png") no-repeat;
+    display: inline;
+}
+.like-button:hover{
+    background: url("../images/heart.png") no-repeat;
+}
+#bottom-part{
+    margin-left:45%;
+    padding-bottom: 50px;
+}
