@@ -96,27 +96,31 @@ body{
     margin-top: 25vh;
     text-decoration: none;
 }
-.rowdetails{
-    
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    padding: 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.row-container{
+    margin: 64px auto;
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
 }
-.tabledetails{
-    column-gap: 50px;
+.row-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+    gap: 8px;
+}
+.row-item .number{
     text-align: center;
+    font-size: 32px;
+    font-weight: bolder;
+    text-shadow: 0 0 5px white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-.tabledetails th{
-    font-size: 2rem;
-}
-.tabledetails tr{
-    font-size: 1rem;
-}
-.tabledetails td{
-    padding: 0 30px;
+.row-item .number-caption{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .horizontal-line{
