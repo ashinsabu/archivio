@@ -113,7 +113,7 @@ body{
     text-align: center;
     font-size: 32px;
     font-weight: bolder;
-    text-shadow: 0 0 5px white;
+    text-shadow: 0 0 2px white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .row-item .number-caption{
@@ -135,39 +135,40 @@ body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 64px;
     margin-left: 300px;
-    margin-right: 50%;
-    margin-bottom: 30px;
+    margin-bottom: 64px;
 }
-.horizontal-scroll-container {   
+.artists-container { 
+    margin: 0 auto;
+    width: 62%;  
+    align-self: center;
     display: flex;    
-    overflow-x: auto;
-    margin-left: 300px;
-    margin-right: 300px;
+    flex-wrap: wrap;
+    gap: 64px;
 }
-.horizontal-scroll-container img {    
-    margin-right: 40px;
+.artists-container img { 
     height: 180px;
     width: 180px;
 }
-.horizontal-scroll-container a{
+.artists-container a{
     text-decoration: none;
 }
-#bottom-margin{
-    margin-top: 500px;
+.artists-container div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .composer{
     border: 1px solid #BA7D11;
     border-radius: 50%;
 }
 .composer-name{
-    text-align: center;
-    margin-right: 40px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 22px;
+    font-size: 24px;
     color: white;
     text-shadow: 0 0 3px black;
 }
-#seemore1{
+
+#seemore{
     text-align: center;
     border: 2px solid #691417;
     font-weight: bold;
@@ -179,18 +180,15 @@ body{
     margin-left: 40%;
     margin-right: 40%;   
 }
+#seemore:hover{
+    background-color: #691417;
+    color: white;
+}
 #seemorelink{
     text-decoration: none;
     color: #691417;
 }
-#seemore1 a{
-    text-decoration: none;
-    color: #691417;
-}
-#seemore1:hover{
-    background-color: #691417;
-    color: white;
-}
+
 .footer{
     height: fit-content;
     width: 100%;
