@@ -1,6 +1,10 @@
 # Summary of Project
 An archive of classical music. 
 
+# API's used (Credits)
+1. Glavier's Spotify API : https://rapidapi.com/Glavier/api/spotify23/
+2. music-news-API by NicolaG1993: https://rapidapi.com/NicolaG1993/api/music-news-api/
+
 # View the page
 View the site hosted on GitHub pages https://ashinsabu.github.io/archivio/index.html
 
@@ -10,6 +14,4 @@ View the site hosted on GitHub pages https://ashinsabu.github.io/archivio/index.
 ![image](https://user-images.githubusercontent.com/38109596/168922504-90130deb-0d69-43ab-aa9b-5c595fb4220b.png)
 
 # TODO
-> Add Login Feature
-> Add user submissions for blogs and upvote-downvote system.
-> Have user-specific as well as public playlists.
+
