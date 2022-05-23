@@ -1,56 +1,125 @@
-.flex-container{
-    background-color: lightblue;
-    border: 4px solid black;
+body{
     display: flex;
-    padding: 10px;
-    margin: 10px;
-    margin-top: 10%;
-    
-}
-.flex-container div{
-    margin: 10px;
-    background-color: aliceblue;
+    flex-direction: column;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 24px;
-    color: #BB7D11;
 }
-.flex-container .one{
-    display: flex; /* making item a container as well */
-    justify-content: center;
-    align-items: center;
-    border: 4px solid black;
-    height: 300px;
-    flex:1 1 auto;
-}
-.flex-container .two{
-    display: flex; /* making item a container as well */
-    justify-content: center;
-    align-items: center;
-    border: 4px solid black;
-    flex:1 1 auto ;
-}
-.flex-container .three{
-    display: flex; /* making item a container as well */
-    justify-content: center;
-    align-items: center;
-    border: 4px solid black;
-    flex:2 4 auto;
-}
-.flex-container2{
-    background-color: rgb(182, 75, 182);
-    border: 4px solid black;
+.hero{
+    background-color: #69141730;
+    height: 420px;
+    padding-top: 100px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 40px;
+    box-shadow: 0 0 4px black;
     display: flex;
-    padding: 10px;
-    margin: 10px;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+}
+.hero-info{
+    flex: 1;
+}
+.hero-title-link{
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(110, 83, 83);
+}
+.hero-text{
+    font-size: 18px;
+    color: rgba(110, 60, 60, 0.585);
+}
+
+.hero-image{
+    /* flex: 1; */
+    width: 380px;
+    height: 380px;
+}
+.charts-title{
+    margin-left: 84px;
+    margin-bottom: 24px;
+    color: #BB7D11;
+    font-size: 32px;
+    font-weight: bolder;
+}
+.hr{
+    margin-left: 84px;
+    margin-top: 48px;
+    margin-bottom: 16px;
+    width: 180px;
+    height: 5px;
+    background-color: #BB7D11;
+}
+.top-tracks-daily{
+    margin-left: 84px;
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+    margin-bottom: 128px;
+}
+.top-tracks-daily a{
+    text-decoration: none;
+}
+
+.top-tracks-weekly{
+    margin-left: 84px;
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+.top-tracks-weekly a{
+    text-decoration: none;
+}
+.top-tracks-daily a{
+    text-decoration: none;
+}
+.track-card{
+    display: flex;
+    border-radius: 2px;
+    overflow: hidden;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);  
+    height: 230px;
+    width: 136px;
+    transition: transform 200ms ease-in-out 25ms;
+    background-color: #282A2D;
+}
+.track-card:hover{
+    transform: scale(1.06);
+}
+.track-card-image{
+    border-radius: 2px;
+    justify-self: flex-start;
+    /* height: 100%; */
+    width: 100%;    
     
 }
-.flex-container2 div{
-    background-color: rgb(255, 202, 255);
-    margin: 10px;
-    flex: 1 1 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 4px solid black;
-    height: 200px;
+.track-card-track-name{
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 4px;
+    font-size: 15px;
+    padding: 0 8px;
+    color: rgba(255,255,255); 
+    line-height: 1;
+    font-weight: 1000;
+    text-shadow: 0 0 2px black;
+    text-overflow: ellipsis;
+}
+.track-card-artist-name{
+    margin: 4px auto;
+    font-size: 12px;
+    padding: 0 8px;
+    color: #7A7A7A; 
+    line-height: 1;
+    /* font-weight: 1000; */
+    text-shadow: 0 0 2px black;
+}
+.track-card-plays{
+    margin: 4px auto;
+    font-size: 12px;
+    color: #9E9B9C;
+    align-self: flex-end; 
 }

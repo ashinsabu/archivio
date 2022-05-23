@@ -5,7 +5,7 @@
     <title>Archivio</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/explore.css">
-    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"> 
 </head>
 <body class="body"> 
     <div class="header">
@@ -17,20 +17,44 @@
             <a href="blogs.html">Blogs</a>
             <a href="artistpages/beethoven.html">Artists</a>
             
-            <a href="formpage.html" style="color: lightblue; font-size: 18px">Login/Sign Up</a>
+            <a href="signup.html" style="color: lightblue; font-size: 18px">Login/Sign Up</a>
         </div>
     </div>
-
-    <div class="flex-container">
-        <div class="one">Explore by Genre</div>
-        <div class="two">Explore by Artist</div>
-        <div class="three">Explore by Time period</div>
+    <div class="hero">
+        <div class="hero-info">
+            <a href="#" class="hero-title-link">
+                <h1 class="hero-title">
+                    Kendrick Lamar’s ‘Mr. Morale & The Big Steppers’ Debuts at No. 1 on the Billboard 200 Albums Chart
+                </h1>
+            </a>
+            <p class="hero-text">
+                Kendrick Lamar lands his fourth No. 1 album on the Billboard 200 chart as his latest release, Mr. Morale & The Big Steppers, launches atop the list (dated May 28). He’s debuted at No. 1 with each of his last four albums.
+            </p>
+            <p class="hero-text">
+                Mr. Morale & The Big Steppers charges in with 295,500 equivalent album units earned in the U.S. in the week ending May 19, according to Luminat...
+            </p>
+        </div>
+        <div class="hero-image">
+            <img class="hero-image" src="images/kendrick.jpeg"></img>
+            <p style="text-align: right; color: rgba(128, 128, 128, 0.549); margin-top: 0px;">Credit for image: Keith Caulfield</p>
+        </div>
+        
     </div>
-    <div class="flex-container2">
-        <div class="one">1</div>
-        <div class="two">2</div>
-      </div>
-    <span style="margin-left: 50%;">Testing Flexbox</span>
+    <div class="hr"></div>
+    <div class="charts-title">Top tracks - This Week</div>
+
+    <div class="top-tracks-weekly">
+        
+    </div>
+    
+    <div class="hr"></div>
+
+    <div class="charts-title">Top tracks - Today</div>
+
+    <div class="top-tracks-daily">
+        
+    </div>
+
     <div class="footer">
         <div class="footer-container">
             <div class="socials"><a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png"></a></div>
@@ -49,5 +73,6 @@
         </div>
     </div>
     <div id="bottom-margin"></div>
+    <script src="js/explore.js"></script>
 </body>
 </html>
