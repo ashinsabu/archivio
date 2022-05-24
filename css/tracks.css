@@ -58,13 +58,13 @@ body{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 37px;
+  gap: 32px;
   align-items: center;
 }
 .result{
-  width: 330px;
-  padding: 16px;
-  padding-top: 32px;
+  width: 300px;
+  padding: 10px;
+  padding-top:12px;
   box-shadow: 0 2px 4px black;
   background-color: rgba(0, 0, 0, 0.784);
 }
