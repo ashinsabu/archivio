@@ -1,0 +1,46 @@
+.hero{
+    background-image: url("../images/herobg.jpg");
+   
+}
+.hero-info{
+    backdrop-filter: blur(15px);   
+}
+.hero-title{
+    color: white;
+}
+.hero-text{
+    color: rgba(255, 255, 255, 0.567);  
+}
+.news-board{
+    margin: 0 140px;
+}
+.news-board h1{
+    margin-top: 0px;
+    margin-bottom: 8px;
+    font-size: 42px;
+    color: #BB7D11;
+}
+.news-board > .hr{
+    margin-left: 0px;
+    margin-bottom: 8px;
+}
+.news-article{
+    display: flex;
+    gap: 32px;
+    /* justify-content: center; */
+    align-items: center;
+    color: rgba(0, 0, 0, 0.54);
+}
+.megaphone{
+    height: 64px;
+}
+.news-article a{
+    margin-top: 0px;
+
+    text-decoration: none;
+    color: #691417be;
+}
+.news-source{
+    margin-top:4px;
+    color: rgba(128, 128, 128, 0.493);
+}
