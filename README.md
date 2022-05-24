@@ -1,5 +1,5 @@
 # Summary of Project
-An archive for music and other music related purposes. 
+A web project for music and other music related purposes. 
 
 # API's used (Credits)
 1. Glavier's Spotify API : https://rapidapi.com/Glavier/api/spotify23/
