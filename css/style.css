@@ -67,14 +67,14 @@ body{
     font-weight: bold;
     text-align: center;
     font-size: 6rem;
-    margin-top: 15vh;
+    margin-top: 20vh;
     text-decoration: none;
 }
 
 #centeredslogan
 { 
     color: black;
-    text-shadow: 0 0 3px white, 0 0 3px red;
+    text-shadow: 0 0 3px white, 0 0 1px red;
     font-family: Trebuchet MS;
     font-weight: bold;
     text-align: center;
