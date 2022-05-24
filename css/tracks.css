@@ -36,15 +36,19 @@ body{
   color: white;
   border-radius: 0 5px 5px 0;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 24px;
 }
 
 .wrap{
   width: 50%;
-  position: absolute;
-  top: 15%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin: 100px auto; 
+  margin-bottom: 0px;
+  transition: margin 0.5s;
+}
+.wrap-noresult{
+  width: 50%;
+  margin: 300px auto; 
+  margin-bottom: 0px;
 }
 .search-results{
   margin-top: 120px;
@@ -52,13 +56,25 @@ body{
   margin-right: 64px;
   text-align: center;
   display: flex;
-  flex-direction: column;
-  /* flex-wrap: wrap; */
-  gap: 32px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 37px;
   align-items: center;
 }
 .result{
+  width: 330px;
   padding: 16px;
+  padding-top: 32px;
   box-shadow: 0 2px 4px black;
-  background-color: white;
+  background-color: rgba(0, 0, 0, 0.784);
+}
+.track-title{
+  text-overflow: clip;
+}
+.result p{
+  color: rgba(255, 255, 255, 0.568);
+}
+.result a{
+  text-decoration: none;
+  color: white;
 }

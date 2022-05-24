@@ -6,10 +6,13 @@ const options = {
 	}
 };
 
+let searchbar = document.querySelector('.wrap-noresult');
 
 let searchQuery = document.querySelector('.searchTerm');
 
 function searchandprint(){
+	if(searchbar.className=="wrap-noresult")
+		searchbar.className="wrap";
     let query = searchQuery.value;
     console.log(query);
     fetch('https://spotify23.p.rapidapi.com/search/?q='+query+'&type=tracks&offset=0&limit=10&numberOfTopResults=5', options)
@@ -20,23 +23,34 @@ function searchandprint(){
 		console.log(tracks);
         for(let i=0;i<10;i++){
             let trackname = tracks[i]['data']['name'];
-			let albumname = tracks[i]['data']['albumOfTrack']['name'];
+			let albumname = "Album: "+tracks[i]['data']['albumOfTrack']['name'];
 			let albumcover = tracks[i]['data']['albumOfTrack']['coverArt']['sources'][0]['url'];
-            
+            let artistName = tracks[i]['data']['artists']['items'][0]['profile']['name'];
+			let trackUrl = tracks[i]['data']['uri'];
+
 			let result = document.createElement('div');
 			result.className="result";
 
-			console.log(albumcover);
 			let resultimg = document.createElement('img');
 			resultimg.src = albumcover;
 
+			let tracklink = document.createElement('a');
+			tracklink.href=trackUrl;
+			tracklink.target="_blank";
+			
 			let title = document.createElement('h3');
 			title.textContent=trackname;
+			title.className="track-title";
+
+			tracklink.append(title);
 
 			let album = document.createElement('p');
 			album.textContent=albumname;
 
-			result.append(resultimg,title,album);
+			let artistname = document.createElement('p');
+			artistname.textContent = artistName;
+
+			result.append(resultimg,tracklink,album,artistname);
 
 			area.append(result);
 		}
