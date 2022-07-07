@@ -13,6 +13,12 @@
 }
 .news-board{
     margin: 0 140px;
+    display: flex;
+    flex-direction: column;
+}
+.news-articles{
+    display: flex;
+    flex-direction: column;
 }
 .news-board h1{
     margin-top: 0px;
@@ -43,4 +49,9 @@
 .news-source{
     margin-top:4px;
     color: rgba(128, 128, 128, 0.493);
+}
+.loader{
+    height: 100px;
+    align-self: center;
+    padding: 64px;
 }

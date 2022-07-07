@@ -15,13 +15,13 @@ function searchandprint(){
 		searchbar.className="wrap";
     let query = searchQuery.value;
     console.log(query);
-    fetch('https://spotify23.p.rapidapi.com/search/?q='+query+'&type=tracks&offset=0&limit=10&numberOfTopResults=5', options)
+    fetch('https://spotify23.p.rapidapi.com/search/?q='+query+'&type=tracks&offset=0&limit=100&numberOfTopResults=5', options)
 	.then(response => response.json().then(data =>{
 		let area = document.querySelector('.search-results');
 		area.innerHTML="";
 		let tracks = data['tracks']['items'];
 		console.log(tracks);
-        for(let i=0;i<10;i++){
+        for(let i=0;i<tracks.length;i++){
             let trackname = tracks[i]['data']['name'];
 			let albumname = "Album: "+tracks[i]['data']['albumOfTrack']['name'];
 			let albumcover = tracks[i]['data']['albumOfTrack']['coverArt']['sources'][0]['url'];
